@@ -16,7 +16,7 @@
 						img: '../static/images/tabbar/home.png',
 						activeImg: '../static/images/tabbar/home_active.png',
 						title: '首页',
-						path: '/pages/index/index',
+						path: '/pages/home/index',
 						color: 'red',
 					},
 					{
@@ -44,21 +44,22 @@
 			}
 		},
 		created() {
-			let index = getApp().globalData.activeTabbar
-			this.activeTabbar = index;
-			console.log(this.activeTabbar)
-			// console.log(index, '========')
-			// this.changeTabbar(index);
+		/* 	this.activeTabbar = getApp().globalData.activeTabbar
+			console.log(this.activeTabbar) */
 		},
 		methods: {
 			changeTabbar(index) {
 				const that = this;
 				this.activeTabbar = index;
-				getApp().globalData.activeTabbar = index;
+				// getApp().globalData.activeTabbar = index;
+				// console.log(getApp().globalData.activeTabbar)
 				uni.navigateTo({
 					url: that.tabbarList[index].path
 				})
 			}
+		},
+		watch:{
+			
 		}
 	}
 </script>
@@ -70,7 +71,8 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		height: 100rpx;
+		height: 50px;
+		background-color: #000
 	}
 
 	.tabbar-item {
@@ -80,11 +82,13 @@
 
 	img {
 		display: inline-block;
-		width: 50rpx;
-		height: 50rpx;
+		width: 25px;
+		height: 25px;
 		vertical-align: top;
 	}
 	.title {
-		font-size: 28rpx;
+		height: 25px;
+		line-height: 25px;
+		font-size: 14px;
 	}
 </style>

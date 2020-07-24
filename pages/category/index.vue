@@ -1,7 +1,6 @@
 <template>
 	<view>
 		category
-		<tabbar></tabbar>
 	</view>
 </template>
 

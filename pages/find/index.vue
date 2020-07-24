@@ -1,7 +1,6 @@
 <template>
 	<view>
 		find
-		<tabbar></tabbar>
 	</view>
 </template>
 

@@ -1,7 +1,6 @@
 <template>
 	<view>
 		personal
-		<tabbar></tabbar>
 	</view>
 </template>
 
