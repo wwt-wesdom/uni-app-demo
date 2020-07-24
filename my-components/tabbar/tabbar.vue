@@ -1,9 +1,11 @@
 <template>
 	<div class="tabbar">
-		<div class="tabbar-item" v-for="(item, index) in tabbarList" @click="changeTabbar(index)">
-			<img :src="activeTabbar === index ? item.activeImg : item.img" alt="">
-			<p class="title" :style="{color: item.color}">{{item.title}}</p>
-		</div>
+		<template v-if="currentTabbarList.length > 0">
+			<div class="tabbar-item" v-for="(item, index) in currentTabbarList" @click="changeTabbar(index)">
+				<img :src="activeTabbar === index ? item.activeImg : item.img" alt="">
+				<p class="title" :style="{color: item.color}">{{item.title}}</p>
+			</div>
+		</template>
 	</div>
 </template>
 
@@ -40,18 +42,26 @@
 						path: '/pages/personal/index',
 						color: 'green',
 					},
-				]
+				],
+				currentTabbarList: []
 			}
 		},
 		created() {
+			this.add();
 		},
 		methods: {
 			changeTabbar(index) {
 				const that = this;
 				this.activeTabbar = index;
 				uni.navigateTo({
-					url: that.tabbarList[index].path
+					url: that.currentTabbarList[index].path
 				})
+			},
+			add() {
+				this.currentTabbarList = JSON.parse(JSON.stringify(this.tabbarList))
+			},
+			remove() {
+				this.currentTabbarList = [];
 			}
 		},
 		watch:{

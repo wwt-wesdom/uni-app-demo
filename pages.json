@@ -19,13 +19,17 @@
 		"style": {
 			"navigationBarTitleText": "发现"
 		}
-	}    ,{
-            "path" : "pages/home/index",
-            "style" : {
-							"navigationBarTitleText": "首页"
-						}
-        }
-    ],
+	}, {
+		"path": "pages/home/index",
+		"style": {
+			"navigationBarTitleText": "首页"
+		}
+	}, {
+		"path": "pages/noTabbar/noTabbar",
+		"style": {
+			"navigationBarTitleText": "noTabbar"
+		}
+	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
@@ -37,18 +41,19 @@
 		"selectedColor": "#f9284f",
 		"backgroundColor": "#eee",
 		"borderStyle": "black",
-		"list": [/* {
-				"pagePath": "pages/index/index",
-				"text": "首页",
-				"iconPath": "static/images/tabbar/home.png",
-				"selectedIconPath": "static/images/tabbar/home_active.png"
-			},
-			{
-				"pagePath": "pages/category/index",
-				"text": "分类",
-				"iconPath": "static/images/tabbar/category.png",
-				"selectedIconPath": "static/images/tabbar/category_active.png"
-			} */
+		"list": [
+			/* {
+							"pagePath": "pages/index/index",
+							"text": "首页",
+							"iconPath": "static/images/tabbar/home.png",
+							"selectedIconPath": "static/images/tabbar/home_active.png"
+						},
+						{
+							"pagePath": "pages/category/index",
+							"text": "分类",
+							"iconPath": "static/images/tabbar/category.png",
+							"selectedIconPath": "static/images/tabbar/category_active.png"
+						} */
 			/* {
 				"pagePath": "pages/find/index",
 				"text": "发现",

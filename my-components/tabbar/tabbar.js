@@ -7,13 +7,21 @@ function getTabbarInstance() {
   return tabbarInstance;
 }
 
-function notice() {
-  let instance = getMessageInstance();
+function add() {
+  let instance = getTabbarInstance();
   instance.add()
 }
 
+function remove() {
+  let instance = getTabbarInstance();
+  instance.remove()
+}
+
 export default {
-  info(options) {
-    return notice(options)
-  }
+  add() {
+    return add()
+  },
+	remove() {
+		return remove()
+	}
 }

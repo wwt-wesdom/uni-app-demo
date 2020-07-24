@@ -26,7 +26,7 @@ Tabbar.newInstance = properties => {
       tabbar.add();
     },
     remove () {
-      tabbar.remove(name);
+      tabbar.remove();
     }
   }
 };

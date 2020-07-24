@@ -8,6 +8,7 @@ export default {
 	},
 	onShow: function() {
 		console.log('App Show');
+		this.$Tabbar.add();
 	},
 	onHide: function() {
 		console.log('App Hide');
