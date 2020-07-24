@@ -43,7 +43,8 @@
 				]
 			}
 		},
-		created() {},
+		created() {
+		},
 		methods: {
 			changeTabbar(index) {
 				const that = this;
@@ -53,6 +54,8 @@
 				})
 			}
 		},
+		watch:{
+		}
 	}
 </script>
 
