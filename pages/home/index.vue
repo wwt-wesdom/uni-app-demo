@@ -12,6 +12,9 @@
 				
 			}
 		},
+		created() {
+			
+		},
 		methods: {
 			changeUrl() {
 				uni.navigateTo({

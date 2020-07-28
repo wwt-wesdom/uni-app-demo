@@ -12,8 +12,6 @@
 			}
 		},
 		created() {
-			console.log(11111111)
-			this.$Tabbar.remove();
 		},
 		methods: {
 			

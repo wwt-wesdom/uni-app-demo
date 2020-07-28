@@ -1,4 +1,5 @@
 <script>
+import router from './static/js/router.js'
 export default {
 	globalData: {  
 	  activeTabbar: 0  
@@ -8,7 +9,12 @@ export default {
 	},
 	onShow: function() {
 		console.log('App Show');
-		this.$Tabbar.add();
+		console.log(this.$router)
+		if(router.noTabbarPageList.indexOf(this.$router.history.current.path) >= 0) {
+			this.$Tabbar.remove()
+		} else {
+			this.$Tabbar.add();
+		}
 	},
 	onHide: function() {
 		console.log('App Hide');

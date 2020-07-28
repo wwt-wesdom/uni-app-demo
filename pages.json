@@ -1,8 +1,8 @@
 {
 	"pages": [{
-		"path": "pages/index/index",
+		"path": "pages/home/index",
 		"style": {
-			"navigationBarTitleText": "uni-ui基础项目"
+			"navigationBarTitleText": "首页"
 		}
 	}, {
 		"path": "pages/category/index",
@@ -20,11 +20,6 @@
 			"navigationBarTitleText": "发现"
 		}
 	}, {
-		"path": "pages/home/index",
-		"style": {
-			"navigationBarTitleText": "首页"
-		}
-	}, {
 		"path": "pages/noTabbar/noTabbar",
 		"style": {
 			"navigationBarTitleText": "noTabbar"
@@ -35,37 +30,5 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#007AFF",
 		"backgroundColor": "#FFFFFF"
-	},
-	"tabBar": {
-		"color": "#333",
-		"selectedColor": "#f9284f",
-		"backgroundColor": "#eee",
-		"borderStyle": "black",
-		"list": [
-			/* {
-							"pagePath": "pages/index/index",
-							"text": "首页",
-							"iconPath": "static/images/tabbar/home.png",
-							"selectedIconPath": "static/images/tabbar/home_active.png"
-						},
-						{
-							"pagePath": "pages/category/index",
-							"text": "分类",
-							"iconPath": "static/images/tabbar/category.png",
-							"selectedIconPath": "static/images/tabbar/category_active.png"
-						} */
-			/* {
-				"pagePath": "pages/find/index",
-				"text": "发现",
-				"iconPath": "static/images/tabbar/find.png",
-				"selectedIconPath": "static/images/tabbar/find_active.png"
-			},
-			{
-				"pagePath": "pages/personal/index",
-				"text": "我的",
-				"iconPath": "static/images/tabbar/personal.png",
-				"selectedIconPath": "static/images/tabbar/personal_active.png"
-			} */
-		]
 	}
 }

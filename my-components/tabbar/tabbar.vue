@@ -1,9 +1,11 @@
 <template>
-	<div class="tabbar">
+	<div>
 		<template v-if="currentTabbarList.length > 0">
-			<div class="tabbar-item" v-for="(item, index) in currentTabbarList" @click="changeTabbar(index)">
-				<img :src="activeTabbar === index ? item.activeImg : item.img" alt="">
-				<p class="title" :style="{color: item.color}">{{item.title}}</p>
+			<div class="tabbar">
+				<div class="tabbar-item" v-for="(item, index) in currentTabbarList" @click="changeTabbar(index)">
+					<img :src="activeTabbar === index ? item.activeImg : item.img" alt="">
+					<p class="title" :style="{color: item.color}">{{item.title}}</p>
+				</div>
 			</div>
 		</template>
 	</div>
@@ -53,10 +55,13 @@
 			changeTabbar(index) {
 				const that = this;
 				this.activeTabbar = index;
-				uni.navigateTo({
+				uni.reLaunch({
 					url: that.currentTabbarList[index].path
 				})
 			},
+			/**
+			 * 添加导航栏信息，需要copy一份
+			 */
 			add() {
 				this.currentTabbarList = JSON.parse(JSON.stringify(this.tabbarList))
 			},
