@@ -1,34 +1,46 @@
 {
-	"pages": [{
-		"path": "pages/home/index",
-		"style": {
-			"navigationBarTitleText": "首页"
-		}
-	}, {
-		"path": "pages/category/index",
-		"style": {
-			"navigationBarTitleText": "分类"
-		}
-	}, {
-		"path": "pages/personal/index",
-		"style": {
-			"navigationBarTitleText": "个人中心"
-		}
-	}, {
-		"path": "pages/find/index",
-		"style": {
-			"navigationBarTitleText": "发现"
-		}
-	}, {
-		"path": "pages/noTabbar/noTabbar",
-		"style": {
-			"navigationBarTitleText": "noTabbar"
-		}
-	}],
-	"globalStyle": {
-		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#007AFF",
-		"backgroundColor": "#FFFFFF"
-	}
+  "pages": [
+		{
+		  "path": "pages/index/index",
+		  "style": {
+		    "navigationBarTitleText": "首页"
+		  }
+		},
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/category/index",
+      "style": {
+        "navigationBarTitleText": "分类"
+      }
+    },
+    {
+      "path": "pages/personal/index",
+      "style": {
+        "navigationBarTitleText": "个人中心"
+      }
+    },
+    {
+      "path": "pages/find/index",
+      "style": {
+        "navigationBarTitleText": "发现"
+      }
+    },
+    {
+      "path": "pages/noTabbar/noTabbar",
+      "style": {
+        "navigationBarTitleText": "noTabbar"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#007AFF",
+    "backgroundColor": "#FFFFFF"
+  }
 }

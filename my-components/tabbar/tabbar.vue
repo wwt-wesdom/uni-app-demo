@@ -49,14 +49,15 @@
 			}
 		},
 		created() {
-			this.add();
+			// this.add();
 		},
 		methods: {
 			changeTabbar(index) {
 				const that = this;
 				this.activeTabbar = index;
-				uni.reLaunch({
-					url: that.currentTabbarList[index].path
+				let url = that.currentTabbarList[index].path;
+				uni.redirectTo({
+					url: url
 				})
 			},
 			/**
@@ -69,8 +70,6 @@
 				this.currentTabbarList = [];
 			}
 		},
-		watch:{
-		}
 	}
 </script>
 

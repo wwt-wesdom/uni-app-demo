@@ -11,6 +11,9 @@
 				
 			}
 		},
+		created() {
+			console.log('category')
+		},
 		methods: {
 			
 		}

@@ -9,16 +9,15 @@ export default {
 	},
 	onShow: function() {
 		console.log('App Show');
-		console.log(this.$router)
-		if(router.noTabbarPageList.indexOf(this.$router.history.current.path) >= 0) {
+	/* 	if(router.noTabbarPageList.indexOf(this.$router.history.current.path) >= 0) {
 			this.$Tabbar.remove()
 		} else {
 			this.$Tabbar.add();
-		}
+		} */
 	},
 	onHide: function() {
 		console.log('App Hide');
-	}
+	},
 };
 </script>
 
